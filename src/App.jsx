@@ -5,19 +5,13 @@ import SearchParams from "./SearchParams";
 
 const App = () => {
   return (
-    <div>
-      <div>
-        <BrowserRouter>
-          <header>
-            <Link to="/">Adopt Me!</Link>
-          </header>
-          <Routes>
-            <Route path="/details/:id" element={<Detail />} />
-            <Route path="/" element={<SearchParams />} />
-          </Routes>
-        </BrowserRouter>
-      </div>
-    </div>
+    <BrowserRouter>
+    <h1>Adopt Me!</h1>
+    <Routes>
+      <Route path="/details/:id" element={<Detail />} />
+      <Route path="/" element={<SearchParams />} />
+    </Routes>
+  </BrowserRouter>
   );
 };
 
