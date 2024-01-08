@@ -14,10 +14,8 @@ class ErrorBoundry extends Component {
     if (this.state.hasError) {
       return (
         <h2>
-          There was an error with this listing. 
-          <Link to="/">Click here</Link>{" "}
-          
-          to back to the home page.
+          There was an error with this listing.
+          <Link to="/">Click here</Link> to back to the home page.
         </h2>
       );
     }

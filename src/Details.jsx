@@ -6,9 +6,7 @@ import fetchPet from "./fetchPet";
 import Modal from "./Modal";
 import ErrorBoundry from "./ErrorBoundry";
 
-
 const Details = () => {
-
   const { id } = useParams();
   const [showModal, setShowModal] = useState(false);
   const results = useQuery(["details", id], fetchPet);
