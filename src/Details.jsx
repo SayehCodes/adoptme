@@ -37,10 +37,14 @@ const Details = () => {
             <div>
               <h1>Would you like to adopt {pet.name}?</h1>
               <div className="buttons">
-                <button onClick={()=>{
-                  setAdoptedPet(pet);
-                  navigate("/");
-                }}>Yes</button>
+                <button
+                  onClick={() => {
+                    setAdoptedPet(pet);
+                    navigate("/");
+                  }}
+                >
+                  Yes
+                </button>
                 <button onClick={() => setShowModal(false)}>No</button>
               </div>
             </div>
