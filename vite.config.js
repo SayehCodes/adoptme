@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   root: "src",
   build: {
-    outDir: "dist", // Specify the output directory
+    outDir: "../dist", // Specify the output directory
     commonjsOptions: {
       transformMixedEsModules: true,
       // include: [/linked-dep/, /node_modules/],
